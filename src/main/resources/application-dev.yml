@@ -1,0 +1,15 @@
+#开发环境配置
+spring:
+  profiles:
+    active: dev
+  #数据源配置
+  datasource:
+    url: jdbc:mysql://111.111.111.111:3306/dd?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true&amp;rewriteBatchedStatements=true&amp;useSSL=true
+    username: root
+    password: xxxxxx
+    driverClassName: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+#开发环境打印sql
+logging:
+  level:
+    com.company.project.biz.mapper: debug
